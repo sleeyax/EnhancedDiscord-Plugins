@@ -52,7 +52,7 @@ module.exports = new Plugin({
         const l = window.ED.classMaps.labels = findModule('labelText');
         const d = window.ED.classMaps.description;
 
-        let result = `<div id="cachePluginStatus" class="${d.description} ${d.modeDefault}"></div><div class="${a.horizontal} ${a.alignCenter} ${a.noWrap} ${l.item}><div class="${fc.horizontal} ${a.justifyStart} ${a.alignStretch} ${a.noWrap} ${l.label}" style="flex: 0 1 auto;" id="cachePluginButtons">`;
+        let result = `<div id="cachePluginStatus" class="${d.description} ${d.modeDefault}"></div><div class="${a.horizontal} ${a.alignCenter} ${a.noWrap} ${l.item}><div class="${fc.horizontal} ${a.justifyStart} ${a.alignStretch} ${a.noWrap} ${l.label}" style="flex: 0 1 auto;">`;
         result += `<button id="cachePlugin-clear" class="${b.button} ${b.lookFilled} ${b.sizeSmall} ${b.grow} ${b.colorRed}" style="margin-right: 10px;">Clear cache</button>`;
         result += `<button id="cachePlugin-open" class="${b.button} ${b.lookFilled} ${b.sizeSmall} ${b.grow} ${b.colorGreen}" style="margin-right: 10px;">Open cache folder</button>`;
         result += `<button id="cachePlugin-recover" class="${b.button} ${b.lookFilled} ${b.sizeSmall} ${b.grow} ${b.colorYellow}" style="margin-right: 10px;">Recover images from cache</button>`;
